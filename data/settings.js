@@ -3,12 +3,12 @@ module.exports = {
     adminAuth: {
         type: "credentials",
         users: [{
-            username: "rafa",
-            password: "$2b$08$zKf4H7Mmuq7LkQ5vfj1CHe6Jo2xXMj2cFzv3hYXNHDWXf2r.7.bhe", // senha = 12345
+            username: "Drezry",
+            password: "$2b$08$ju.N5Z5eYCF0yY.TO1A2qeEP4qmtYeP2jRPRciwVy6yqAwWk3jA8G", // senha: Junk@1517
             permissions: "*"
         }]
     },
-    httpNodeAuth: {user: "rafa", pass: "$2b$08$zKf4H7Mmuq7LkQ5vfj1CHe6Jo2xXMj2cFzv3hYXNHDWXf2r.7.bhe"},
-    httpStaticAuth: {user: "rafa", pass: "$2b$08$zKf4H7Mmuq7LkQ5vfj1CHe6Jo2xXMj2cFzv3hYXNHDWXf2r.7.bhe"},
+    httpNodeAuth: {user: "Drezry", pass: "$2b$08$ju.N5Z5eYCF0yY.TO1A2qeEP4qmtYeP2jRPRciwVy6yqAwWk3jA8G"},
+    httpStaticAuth: {user: "Drezry", pass: "$2b$08$ju.N5Z5eYCF0yY.TO1A2qeEP4qmtYeP2jRPRciwVy6yqAwWk3jA8G"},
     uiPort: process.env.PORT || 1880
 }
