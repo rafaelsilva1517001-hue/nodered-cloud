@@ -7,7 +7,7 @@ module.exports = {
         type: "credentials",
         users: [{
             username: "Drezry",
-            // Hash bcrypt compatível com Node-RED 3.x
+            // Hash bcrypt compatível Node-RED 3.x
             password: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2",
             permissions: "*"
         }]
