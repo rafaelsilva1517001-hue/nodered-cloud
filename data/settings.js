@@ -1,25 +1,9 @@
 module.exports = {
     flowFile: 'flows.json',
 
-    adminAuth: {
-        type: "credentials",
-        users: [{
-            username: "Drezry",
-            password: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2",
-            permissions: "*"
-        }]
-    },
+    // adminAuth removido temporariamente
 
-    httpNodeAuth: {
-        user: "Drezry",
-        pass: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2"
-    },
-
-    httpStaticAuth: {
-        user: "Drezry",
-        pass: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2"
-    },
-
+    // Porta padrão (Render usa variável de ambiente)
     uiPort: process.env.PORT || 1880,
 
     editorTheme: {
