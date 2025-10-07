@@ -1,11 +1,11 @@
-# Usando imagem oficial do Node-RED
+# Imagem oficial do Node-RED
 FROM nodered/node-red:latest
 
-# Copiar configurações e fluxos para dentro da imagem
+# Copiar dados para dentro do container
 COPY data /data
 
-# Expor porta padrão do Node-RED (Render usa variável de ambiente PORT)
+# Expor porta padrão
 EXPOSE 1880
 
-# Instrução padrão (Node-RED já inicia automaticamente)
+# Forçar Node-RED a usar /data como userDir
 CMD ["npm", "start", "--", "--userDir", "/data"]
