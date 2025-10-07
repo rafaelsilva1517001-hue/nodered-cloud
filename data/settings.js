@@ -1,14 +1,37 @@
 module.exports = {
+    // Arquivo de fluxos
     flowFile: 'flows.json',
+
+    // Autenticação do painel (admin)
     adminAuth: {
         type: "credentials",
         users: [{
             username: "Drezry",
-            password: "$2b$08$1a5V9ZpN7BtElW4tWKoZqetqZB4nZQz7Kaoq0Rrb8Cmf.Ih5Sr58a", // senha: Junk@1517
+            // Hash bcrypt compatível com Node-RED 3.x
+            password: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2",
             permissions: "*"
         }]
     },
-    httpNodeAuth: {user: "Drezry", pass: "$2b$08$1a5V9ZpN7BtElW4tWKoZqetqZB4nZQz7Kaoq0Rrb8Cmf.Ih5Sr58a"},
-    httpStaticAuth: {user: "Drezry", pass: "$2b$08$1a5V9ZpN7BtElW4tWKoZqetqZB4nZQz7Kaoq0Rrb8Cmf.Ih5Sr58a"},
-    uiPort: process.env.PORT || 1880
-}
+
+    // Autenticação HTTP Node
+    httpNodeAuth: {
+        user: "Drezry",
+        pass: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2"
+    },
+
+    // Autenticação para conteúdo estático
+    httpStaticAuth: {
+        user: "Drezry",
+        pass: "$2b$08$uQFgGPhF9Je3/5Wx4XK1De8aW6MFxwJZ0sbhTnC6p2iOeb1g0rhN2"
+    },
+
+    // Porta padrão (Render usa variável de ambiente)
+    uiPort: process.env.PORT || 1880,
+
+    // Habilitar projetos (opcional)
+    editorTheme: {
+        projects: {
+            enabled: true
+        }
+    }
+};
